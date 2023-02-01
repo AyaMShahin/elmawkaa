@@ -19,10 +19,145 @@
   <link rel="stylesheet" href="/css/style.css">
   <!-- FontAwesone stylesheet -->
   <link rel="stylesheet" href="/css/all.css">
-  <title>elmawkaa</title>
+  <title> الموقع - سوق أونلاين لمواد البناء في مصر</title>
 </head>
 
 <body>
+  <!-- Header -->
+  <header class="droid-arabic">
+
+    <nav class="navbar navbar-expand-lg nav-bg">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="elmawkaa logo"></a>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">مواد بناء <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">أحدث الطلبيات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">كيف يعمل؟</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> سجل كمورد </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">المدونة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">الباقات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">اتصل بنا</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <button class="login">
+              <span class="user icon-general"></span>
+              <span>تسجيل الدخول</span>
+              <span class="new">جديد</span>
+            </button>
+            <div class="dropdown">
+              <button class="btn my-2 my-sm-0 flag d-flex flex-row align-items-center" type="button"
+                id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"">
+              <img class=" flags" src=" ./images/egy.svg" alt="Egypt flag">
+                <span class="mr-2 arrow-down icon-general"></span>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">
+                  <img class="flags" src="./images/sau.svg" alt="Saudi flag">
+                  <span>المملكة العربية السعودية</span>
+                </a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </nav>
+  </header>
+  <!-- End header -->
+
+  <!-- Header Content -->
+  <div class="header-content position-relative droid-arabic">
+    <div class="overlay">
+      <div class="content">
+        <div class="d-flex flex-column align-items-center">
+          <div class="heading">
+            <h2>تعبت من عملية شراء مواد البناء في مصر؟</h2>
+            <p>اطلب عروض أسعار دلوقتي أونلاين من أكبر قاعدة بيانات للموردين في مصر </p>
+          </div>
+
+          <div class="search d-flex flex-row">
+            <div class="dropdown">
+              <input class="search-material position-relative" id="material" name="material" onFocus="show()"
+                onBlur="hide()" onkeyup="search()" placeholder="جرب تكتب &quot;اسمنت&quot;">
+              <div class="materials position-absolute">
+                <a href=""> خرسانة جاهزة</a>
+                <a href="">أسمنت معبأ</a>
+                <a href="">أسمنت سايب</a>
+                <a href="">حديد تسليح</a>
+                <a href="">طوب أسمنتي مصمت</a>
+                <a href="">بلوك أسمنتي مفرغ</a>
+                <a href="">بلاط موزايكو</a>
+                <a href="">بلاط انترلوك</a>
+                <a href="">ألياف حديدية للخرسانة</a>
+                <a href="">رمل</a>
+                <a href="">مواد كهربائية</a>
+                <a href="">مواد سباكة</a>
+                <a href="">عمالة</a>
+                <a href="">جبس أبيض</a>
+                <a href="">زلط</a>
+                <a href="">كرانيش</a>
+                <a href="">أخري</a>
+              </div>
+            </div>
+            <div class="search-btn">
+              <button class="srch icon-general"></button>
+            </div>
+          </div>
+          <div class="measurement d-flex flex-row align-items-center">
+            <span>او ارفع مقايستك كملف</span>
+            <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">ارفع مقايستك</button>
+            <!-- Modal -->
+            <div class="modal fade droid-arabic" id="exampleModal" tabindex="-1" role="dialog"
+              aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-dark" id="exampleModalLabel">ارفع مقايستك</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <label class="text-dark" id="inputStyle">
+                      <span class="upload">ارفع ملفات المقايسة</span>
+                      <input type="file" class="file" accept="image/png, image/jpg, image/gif, image/jpeg">
+                    </label>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary save" disabled>حفظ</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <span>الآن</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Header Content -->
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

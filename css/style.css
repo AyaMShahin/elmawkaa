@@ -3,3 +3,227 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: "Lato", sans-serif;
+  background-image: url(/images/home-bg-white.jpg);
+}
+@font-face {
+  font-family: "Droid Arabic Kufi";
+  src: url(/fonts/DroidKufi-Regular.ttf) format("truetype");
+  font-weight: normal;
+}
+.icon-general {
+  font-weight: 600; /* insert this definition */
+  font-size: 13px;
+  display: inline-block;
+  color: #fff;
+  font-family: "Font Awesome 5 free"; /* change like this */
+}
+.user::after {
+  content: "\f007";
+}
+.arrow-down::before {
+  content: "\f0d7";
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.4); /* alpha= 0.7 the same as opacity */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.flags {
+  border-radius: 10rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.droid-arabic {
+  font-family: "Droid Arabic Kufi";
+}
+.active {
+  display: block !important;
+}
+nav.nav-bg {
+  background: rgba(0, 0, 0, 0.75) none repeat scroll 0 0 !important;
+}
+
+/*---------------------------------------- start of header section --------------------------------------------*/
+
+nav {
+  font-size: 13px;
+}
+nav a {
+  color: #fff;
+  transition: 0.5s ease;
+}
+nav a:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+nav .navbar-brand {
+  padding: 0px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+nav .navbar-brand img {
+  vertical-align: middle;
+  margin: auto;
+  width: 150px;
+  height: auto;
+}
+.navbar-toggler {
+  background-color: #fff;
+}
+.navbar-toggler-icon {
+  width: 1em;
+  height: 1em;
+}
+.navbar-toggler-icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  content: "\f0c9";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  color: #935cae;
+  font-size: 23px;
+  /* background-size: 100% 100%; */
+}
+nav form .login {
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  margin-left: 15px;
+  transition: 0.5s;
+}
+nav form .login:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+nav form .login .new {
+  padding: 0 0.3em;
+  background-color: #28a745;
+  border-radius: 5px;
+  line-height: 1;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 70%;
+}
+nav form .flag {
+  background-color: transparent;
+  vertical-align: middle;
+  padding: 0.3rem !important;
+  margin-right: 0.4rem;
+  border: 1px solid rgba(221, 221, 221, 0.467);
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    direction: ltr;
+  }
+}
+/* Header content section */
+.header-content {
+  height: 75vh;
+  background-image: url(/images/home-bg.jpg);
+  background-size: cover;
+  background-position: 8% 0%;
+  color: #fff;
+}
+.header-content .content .heading {
+  margin-top: 300px;
+  text-align: center;
+}
+.header-content .content .heading h2 {
+  font-size: 50px;
+  font-weight: 400;
+}
+.header-content .content .search input {
+  border: 1px solid #ddd;
+  border-radius: 0.4rem;
+  background: white;
+  width: 656px;
+  text-align: center;
+  min-height: 55px;
+  font-size: x-large;
+}
+.header-content .content .search input:focus-visible {
+  outline: 0;
+}
+.header-content .content .search .materials {
+  height: 200px;
+  overflow-y: scroll;
+  background-color: #ffffff;
+  width: 100%;
+  display: none;
+}
+.header-content .content .search a {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #868ba1;
+  padding: 8px;
+  text-align: right;
+}
+.header-content .content .search a:hover {
+  background-color: #935cae;
+  text-decoration: none;
+  color: #fff;
+}
+.header-content .content .search-btn .srch {
+  min-height: 55px;
+  background-color: #935cae !important;
+  border: 0;
+  border-radius: 0.25rem;
+  padding: 0.375rem 0.75rem;
+  cursor: pointer;
+  transition: 0.6s ease;
+}
+.header-content .content .search-btn .srch:hover {
+  color: #000;
+}
+.header-content .content .search-btn .srch::before {
+  content: "\f002";
+  font-size: 18px;
+}
+.header-content .content .measurement {
+  margin-top: 20px;
+}
+.header-content .content .measurement button {
+  background-color: #935cae;
+  border: 0;
+  color: #fff;
+  border-radius: 3px;
+  padding: 8px !important;
+  margin: 0 7px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.header-content .content .measurement button:hover {
+  color: #212529;
+  text-decoration: none;
+}
+.header-content .content .measurement .close {
+  background-color: transparent;
+  color: #000;
+}
+.header-content .content .measurement .modal-body {
+  display: flex;
+  align-items: flex-start;
+}
+.header-content .content .measurement .modal-body label {
+  background-color: #fff !important;
+  border: 1px solid #935cae;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  padding: 9px;
+}
+.header-content .content .measurement .modal-body .file {
+  display: none;
+}
+.header-content .content .measurement .save:hover {
+  background-color: #279227 !important;
+  border-color: #279227 !important;
+}
