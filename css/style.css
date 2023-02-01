@@ -2,11 +2,14 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  /* border:1px solid red; */
 }
 body {
   font-family: "Lato", sans-serif;
   background-image: url(../images/home-bg-white.jpg);
+  /* height: 100%; */
 }
+
 @font-face {
   font-family: "Droid Arabic Kufi";
   src: url(../fonts/DroidKufi-Regular.ttf) format("truetype");
@@ -27,7 +30,7 @@ body {
 }
 .overlay {
   width: 100%;
-  height: 100%;
+  height: 75vh;
   background-color: rgb(0, 0, 0, 0.4); /* alpha= 0.7 the same as opacity */
   position: absolute;
   top: 0;
@@ -49,11 +52,14 @@ body {
   font-weight: 400;
   text-align: center;
 }
-.line::after {
-  content: "";
-  width: 6px;
-  height: 2px;
+.line {
+  display: block;
+  width: 75px;
+  height: 4px;
   background-color: #935cae;
+  /* top: 40px;
+  right: 40px;
+  z-index: 10; */
 }
 nav.nav-bg {
   background: rgba(0, 0, 0, 0.75) none repeat scroll 0 0 !important;
@@ -204,6 +210,7 @@ nav form .flag {
 }
 .header-content .content .measurement {
   margin-top: 20px;
+  /* margin-bottom: 40px; */
 }
 .header-content .content .measurement button {
   background-color: #935cae;
@@ -246,18 +253,29 @@ nav form .flag {
 /* Order Section */
 .order {
   background-color: #fff !important;
-  height: auto;
+  height: 100vh;
 }
 .order .content .order-material {
   margin-top: 50px;
 }
 .order .content .order-material .material-item {
+  height: 453px;
+  background-image: url(./images/truck.jpg);
+  background-position: 6% 38%;
+  background-repeat: no-repeat;
+  background-size: contain;
   flex-grow: 1;
-  margin-left: 3px;
+  margin-left: 10px;
   border-radius: 25px;
   flex-wrap: wrap;
+}
+.content .order-material .material-item .all {
+  top: 40px;
+  right: 40px;
+  z-index: 10;
 }
 .content .order-material .material-item img {
   width: 100%;
   object-fit: cover;
+  border-radius: 30px;
 }
