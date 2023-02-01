@@ -49,6 +49,12 @@ body {
   font-weight: 400;
   text-align: center;
 }
+.line::after {
+  content: "";
+  width: 6px;
+  height: 2px;
+  background-color: #935cae;
+}
 nav.nav-bg {
   background: rgba(0, 0, 0, 0.75) none repeat scroll 0 0 !important;
 }
@@ -136,6 +142,8 @@ nav form .flag {
   background-size: cover;
   background-position: 8% 0%;
   color: #fff;
+  margin-left: auto;
+  margin-right: auto;
 }
 .header-content .content .heading {
   margin-top: 300px;
@@ -158,7 +166,7 @@ nav form .flag {
   outline: 0;
 }
 .header-content .content .search .materials {
-  height: 200px;
+  min-height: 200px;
   overflow-y: scroll;
   background-color: #ffffff;
   width: 100%;
@@ -238,6 +246,7 @@ nav form .flag {
 /* Order Section */
 .order {
   background-color: #fff !important;
+  height: auto;
 }
 .order .content .order-material {
   margin-top: 50px;
@@ -251,5 +260,4 @@ nav form .flag {
 .content .order-material .material-item img {
   width: 100%;
   object-fit: cover;
-  height: auto;
 }
