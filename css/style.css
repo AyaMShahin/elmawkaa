@@ -44,6 +44,11 @@ body {
 .active {
   display: block !important;
 }
+.title {
+  font-size: 45px;
+  font-weight: 400;
+  text-align: center;
+}
 nav.nav-bg {
   background: rgba(0, 0, 0, 0.75) none repeat scroll 0 0 !important;
 }
@@ -123,6 +128,7 @@ nav form .flag {
     direction: ltr;
   }
 }
+/* End Nav */
 /* Header content section */
 .header-content {
   height: 75vh;
@@ -226,4 +232,24 @@ nav form .flag {
 .header-content .content .measurement .save:hover {
   background-color: #279227 !important;
   border-color: #279227 !important;
+}
+/* Header content end */
+
+/* Order Section */
+.order {
+  background-color: #fff !important;
+}
+.order .content .order-material {
+  margin-top: 50px;
+}
+.order .content .order-material .material-item {
+  flex-grow: 1;
+  margin-left: 3px;
+  border-radius: 25px;
+  flex-wrap: wrap;
+}
+.content .order-material .material-item img {
+  width: 100%;
+  object-fit: cover;
+  height: auto;
 }
