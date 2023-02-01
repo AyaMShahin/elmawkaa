@@ -253,14 +253,14 @@ nav form .flag {
 /* Order Section */
 .order {
   background-color: #fff !important;
-  height: 100vh;
+  height: 300vh;
 }
 .order .content .order-material {
   margin-top: 50px;
 }
 .order .content .order-material .material-item {
   height: 453px;
-  background-image: url(./images/truck.jpg);
+
   background-position: 6% 38%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -269,13 +269,78 @@ nav form .flag {
   border-radius: 25px;
   flex-wrap: wrap;
 }
+.order .content .order-material .material-item:hover {
+  filter: brightness(0.75);
+  visibility: visible;
+}
+.order .content .order-material .material-item:hover h3 {
+  color: rgb(46, 42, 42);
+}
+.order .content .order-material .card1 {
+  background-image: url(../images/truck.jpg);
+}
+.order .content .order-material .card2 {
+  background-image: url(../images/cementfilled.jpg);
+}
+.order .content .order-material .card3 {
+  background-image: url(../images/sayeb.jpg);
+}
+.order .content .order-material .card4 {
+  background-image: url(../images/rebar.jpg);
+}
+.order .content .order-material .card5 {
+  background-image: url(../images/redbricks.jpg);
+}
+.order .content .order-material .card6 {
+  background-image: url(../images/bricks.jpg);
+}
+.order .content .order-material .card7 {
+  background-image: url(../images/hollowcementblock.jpg);
+}
+.order .content .order-material .card8 {
+  background-image: url(../images/mosaictiles.jpg);
+}
+.order .content .order-material .card9 {
+  background-image: url(../images/tiles.jpg);
+}
+.order .content .order-material .card10 {
+  background-image: url(../images/straightfiber.jpg);
+}
+.order .content .order-material .card11 {
+  background-image: url(../images/sand.jpg);
+}
+.order .content .order-material .card12 {
+  background-image: url(../images/electricmaterials.jpg);
+}
 .content .order-material .material-item .all {
   top: 40px;
   right: 40px;
   z-index: 10;
+  color: #000;
 }
 .content .order-material .material-item img {
   width: 100%;
   object-fit: cover;
   border-radius: 30px;
+}
+.order-material .material-item .all h3 {
+  font-size: x-large;
+  font-weight: 400;
+  /* color: #000; */
+}
+.order-material .material-item .tags {
+  bottom: 30px;
+  right: 10px;
+  left: 10px;
+  color: #000;
+  flex-wrap: wrap;
+}
+.order-material .material-item .tags span {
+  margin-left: 8px;
+  border-radius: 10px;
+  background-color: #ffffffa6;
+  font-size: small;
+  padding: 3px 2px;
+  margin-top: 8px;
+  display: inline-block;
 }
