@@ -5,11 +5,11 @@
 }
 body {
   font-family: "Lato", sans-serif;
-  background-image: url(/images/home-bg-white.jpg);
+  background-image: url(../images/home-bg-white.jpg);
 }
 @font-face {
   font-family: "Droid Arabic Kufi";
-  src: url(/fonts/DroidKufi-Regular.ttf) format("truetype");
+  src: url(../fonts/DroidKufi-Regular.ttf) format("truetype");
   font-weight: normal;
 }
 .icon-general {
@@ -138,7 +138,7 @@ nav form .flag {
 /* Header content section */
 .header-content {
   height: 75vh;
-  background-image: url(/images/home-bg.jpg);
+  background-image: url(../images/home-bg.jpg);
   background-size: cover;
   background-position: 8% 0%;
   color: #fff;
