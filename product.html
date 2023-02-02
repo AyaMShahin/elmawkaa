@@ -123,7 +123,7 @@
               <label class="d-block" for="name">اسم المنتج المطلوب
                 <span class="text-danger">*</span>
               </label>
-              <input class="search-material position-relative" id="name" name="material" onFocus="show()"
+              <input type="text" class="search-material position-relative" id="name" name="material" onFocus="show()"
                 onBlur="hide()" onkeyup="search()" placeholder="اختر اسم المنتج المطلوب">
               <div class="materials position-absolute">
                 <a href=""> خرسانة جاهزة</a>
@@ -145,28 +145,28 @@
                 <a href="">أخري</a>
               </div>
             </div>
-            <div id="error" class="error"></div>
+            <div id="nError" class="error"></div>
 
           </div>
           <div class="quantity">
             <label class="d-block" for="quantity">الكمية
               <span class="text-danger">*</span>
             </label>
-            <input type="number" id="quantity" name="Quantity" min="20" step="0.5" required placeholder="ادخل الكمية">
-            <div id="error" class="error"></div>
+            <input type="number" id="quantity" name="Quantity" min="20" step="0.5" placeholder="ادخل الكمية">
+            <div id="qError" class="error"></div>
           </div>
           <div class="units">
             <label class="d-block" for="unit">الوحدة
               <span class="text-danger">*</span>
             </label>
-            <select name="unit" id="unit" disabled required>
+            <select name="unit" id="unit" disabled>
               <option value="unit1">م3</option>
               <option value="unit2">طن</option>
               <option value="unit3">طوبة</option>
               <option value="unit4">م2</option>
             </select>
 
-            <div id="error" class="error"></div>
+            <div id="uError" class="error"></div>
           </div>
 
           <div class="details">
@@ -180,23 +180,23 @@
               <label class="d-block" for="rate">رتبة الأسمنت
                 <span class="text-danger">*</span>
               </label>
-              <select class="col-10 droid-arabic" name="rate" id="rate" required>
+              <select class="col-10 droid-arabic" name="rate" id="rate">
                 <option value="rate1">42.5</option>
                 <option value="rate2">52.5</option>
                 <option value="rate3">32.5</option>
               </select>
-              <div class="error" id="error"></div>
+              <div id="rError" class="error"></div>
             </div>
 
             <div class="types">
               <label class="d-block" for="type">نوع الأسمنت
                 <span class="text-danger">*</span>
               </label>
-              <select class="col-10" name="type" id="type" required>
+              <select class="col-10" name="type" id="type">
                 <option value="type1">عادي</option>
                 <option value="type2">مقاوم</option>
               </select>
-              <div class="error" id="error"></div>
+              <div id="tError" class="error"></div>
             </div>
 
             <div class="factory">

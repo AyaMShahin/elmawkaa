@@ -23,14 +23,14 @@ function search() {
     }
   }
 }
-// const form = document.getElementById("form");
-// const name = document.getElementById("name");
-// const quantity = document.getElementById("quantity");
-// const cementRate = document.getElementById("rate");
-// const cementType = document.getElementById("type");
-// const unit = document.getElementById("unit");
+
+// Validation of Product Info
 function validation() {
-  const errorMsg = document.getElementById("error");
+  const errorName = document.getElementById("nError"),
+    errorQuantity = document.getElementById("qError"),
+    errorUnits = document.getElementById("uError"),
+    errorRate = document.getElementById("rError"),
+    errorType = document.getElementById("tError");
   const regPhone = /^\d{10}$/; // Javascript reGex for Phone Number validation.
   const regName = /\d+$/g; // Javascript reGex for Name validation
   const name = document.forms.RegForm.name.value,
@@ -41,48 +41,42 @@ function validation() {
 
   // if a form field is empty, this function writes a message, and returns false, to prevent the form from being submitted:
   if (name == "" || regName.test(name)) {
-    errorMsg.innerHTML = "هذه الخانة مطلوبة";
+    errorName.innerHTML = "هذه الخانة مطلوبة";
     console.log("Empty");
     return false;
+  } else if (name !== "") {
+    errorName.innerHTML = "";
   }
   if (quantity == "") {
-    errorMsg.innerHTML = "هذه الخانة مطلوبة";
+    errorQuantity.innerHTML = "هذه الخانة مطلوبة";
     console.log("Empty");
     return false;
+  } else if (quantity !== "") {
+    errorQuantity.innerHTML = "";
   }
-  if (
-    units.selectedIndex == -1 ||
-    cementRate.selectedIndex == -1 ||
-    cementType.selectedIndex == -1
-  ) {
-    errorMsg.innerHTML = "هذه الخانة مطلوبة";
+  if (units.selectedIndex == -1) {
+    errorUnits.innerHTML = "هذه الخانة مطلوبة";
     console.log("Empty");
     return false;
+  } else if (units.selectedIndex !== -1) {
+    errorUnits.innerHTML = "";
+    // return true;
+  }
+  if (cementRate.selectedIndex == -1) {
+    errorRate.innerHTML = "هذه الخانة مطلوبة";
+    console.log("Empty");
+    return false;
+  } else if (cementRate.selectedIndex !== -1) {
+    errorRate.innerHTML = "";
+    // return true;
+  }
+  if (cementType.selectedIndex == -1) {
+    errorType.innerHTML = "هذه الخانة مطلوبة";
+    console.log("Empty");
+    return false;
+  } else if (cementType.selectedIndex !== -1) {
+    errorType.innerHTML = "";
+    // return true;
   }
   return true;
 }
-// Targeting submit button
-
-// form.addEventListener("submit", (e) => {
-//   e.preventDefault();
-
-//   engine(nameID, "هذه الخانة مطلوبة");
-//   engine(quantity, "هذه الخانة مطلوبة");
-//   engine(cementRate, "هذه الخانة مطلوبة");
-//   engine(cementType, "هذه الخانة مطلوبة");
-//   engine(unit, "هذه الخانة مطلوبة");
-// });
-
-// id will target our id
-// serial will target our class [error class]
-//message will print a message inside our .error class
-
-// let engine = (id, serial, message) => {
-// We want the JavaScript to print a message inside the error class whenever the user submits a blank form
-//   if (id.value.trim() === "") {
-//     errorMsg.innerHTML = message;
-//     return false;
-//   } else {
-//     errorMsg.innerHTML = "";
-//   }
-// };
