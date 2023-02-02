@@ -69,6 +69,7 @@ nav.nav-bg {
 
 nav {
   font-size: 13px;
+  z-index: 1000;
 }
 nav a {
   color: #fff;
