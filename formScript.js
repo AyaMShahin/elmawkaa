@@ -1,30 +1,53 @@
-// "use strict";
+"use strict";
+
+// Material Input List
+const show = () => {
+  document.querySelector(".materials").classList.add("active");
+};
+
+const hide = () => {
+  document.querySelector(".materials").classList.remove("active");
+};
+// ٍSearch for products
+function search() {
+  let searchBar = document
+    .querySelector(".search-material")
+    .value.toUpperCase();
+  // let materialItem = document.querySelector(".materials");
+  let materialName = document.getElementsByTagName("a");
+  for (let index = 0; index < materialName.length; index++) {
+    if (materialName[index].innerHTML.toUpperCase().indexOf(searchBar) >= 0) {
+      materialName[index].style.display = "";
+    } else {
+      materialName[index].style.display = "none";
+    }
+  }
+}
 // const form = document.getElementById("form");
-// const nameID = document.getElementById("name");
+// const name = document.getElementById("name");
 // const quantity = document.getElementById("quantity");
 // const cementRate = document.getElementById("rate");
 // const cementType = document.getElementById("type");
 // const unit = document.getElementById("unit");
 function validation() {
-  const errorMsg = document.getElementsByClassName("error");
+  const errorMsg = document.getElementById("error");
   const regPhone = /^\d{10}$/; // Javascript reGex for Phone Number validation.
   const regName = /\d+$/g; // Javascript reGex for Name validation
-
   const name = document.forms.RegForm.name.value,
     quantity = document.forms.RegForm.Quantity.value,
     units = document.forms.RegForm.unit.value,
     cementRate = document.forms.RegForm.rate.value,
     cementType = document.forms.RegForm.type.value;
 
-  if (name === "" || regName.test(name)) {
+  // if a form field is empty, this function writes a message, and returns false, to prevent the form from being submitted:
+  if (name == "" || regName.test(name)) {
     errorMsg.innerHTML = "هذه الخانة مطلوبة";
     console.log("Empty");
-    name.focus();
     return false;
   }
-  if (quantity === "") {
+  if (quantity == "") {
     errorMsg.innerHTML = "هذه الخانة مطلوبة";
-    quantity.focus();
+    console.log("Empty");
     return false;
   }
   if (
@@ -33,6 +56,7 @@ function validation() {
     cementType.selectedIndex == -1
   ) {
     errorMsg.innerHTML = "هذه الخانة مطلوبة";
+    console.log("Empty");
     return false;
   }
   return true;
