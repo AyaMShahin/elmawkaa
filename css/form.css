@@ -35,6 +35,13 @@ label {
   font-size: 0.875rem;
   margin-top: 15px;
 }
+.error {
+  font-size: 14.5px;
+  margin-top: 5px;
+  color: red;
+}
+
+/* Main section */
 main form {
   /* text-align: center; */
   /* transform: translate(-50%, -50%); */
@@ -109,11 +116,12 @@ form .content {
   min-height: 45px;
 }
 .content .p-name .materials {
-  min-height: 200px;
+  height: 200px;
   overflow-y: scroll;
   background-color: #ffffff;
   width: 100%;
   display: none;
+  z-index: 100;
 }
 .content .p-name a {
   display: block;

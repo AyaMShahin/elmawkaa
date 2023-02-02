@@ -273,6 +273,7 @@ nav form .flag {
 .order .content .order-material .material-item:hover {
   filter: brightness(0.75);
   visibility: visible;
+  cursor: pointer;
 }
 .order .content .order-material .material-item:hover h3 {
   color: rgb(46, 42, 42);
