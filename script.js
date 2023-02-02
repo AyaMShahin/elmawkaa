@@ -6,7 +6,7 @@ const show = () => {
 const hide = () => {
   document.querySelector(".materials").classList.remove("active");
 };
-// ٍSearch for materials
+// ٍSearch for products
 function search() {
   let searchBar = document
     .querySelector(".search-material")

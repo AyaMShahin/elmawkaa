@@ -61,29 +61,29 @@ body {
   right: 40px;
   z-index: 10; */
 }
-nav.nav-bg {
+header nav.nav-bg {
   background: rgba(0, 0, 0, 0.75) none repeat scroll 0 0 !important;
 }
 
 /*---------------------------------------- start of header section --------------------------------------------*/
 
-nav {
+header nav {
   font-size: 13px;
   z-index: 1000;
 }
-nav a {
+header nav a {
   color: #fff;
   transition: 0.5s ease;
 }
-nav a:hover {
+header nav a:hover {
   color: rgba(255, 255, 255, 0.75);
 }
-nav .navbar-brand {
+header nav .navbar-brand {
   padding: 0px;
   padding-top: 0;
   padding-bottom: 0;
 }
-nav .navbar-brand img {
+header nav .navbar-brand img {
   vertical-align: middle;
   margin: auto;
   width: 150px;

@@ -18,16 +18,17 @@
 
   <!-- Main stylesheet -->
   <link rel="stylesheet" href="../elmawkaa/css/style.css">
+  <!-- Form Styles -->
   <link rel="stylesheet" href="../elmawkaa/css/form.css">
   <!-- FontAwesone stylesheet -->
   <link rel="stylesheet" href="../elmawkaa/css/all.css">
 
-  <title>Document</title>
+  <title> اطلب عرض سعر من منصة الموقع</title>
 </head>
 
 <body>
   <!-- Header -->
-  <!-- <header class="droid-arabic">
+  <header class="droid-arabic">
 
     <nav class="navbar navbar-expand-lg nav-bg">
       <div class="container">
@@ -85,11 +86,18 @@
       </div>
 
     </nav>
-  </header> -->
+  </header>
   <!-- End header -->
-  <main>
+  <main class="droid-arabic">
     <div class="container">
       <form class="" action="" method="get">
+        <div class="header d-flex flex-column justify-content-center align-items-center">
+          <a class="click btn d-block mb-5" href="https://elmawkaa.com/HowToContractor" target="_blank">اضغط هنا لتعرف
+            كيف تعمل
+            المنصة</a>
+          <span>طلب عرض سعر</span>
+          <h2>أسمنت معبأ</h2>
+        </div>
         <nav aria-label="...">
           <ul class="pagination pagination-lg">
             <li class="page-item disabled">
@@ -108,9 +116,121 @@
               </a></li>
           </ul>
         </nav>
+        <div class="content">
+          <div class="p-name">
+            <div class="dropdown">
+              <label class="d-block" for="name">اسم المنتج المطلوب
+                <span class="text-danger">*</span>
+              </label>
+              <input class="search-material position-relative" id="name" required name="material" onFocus="show()"
+                onBlur="hide()" onkeyup="search()" placeholder="اختر اسم المنتج المطلوب">
+              <div class="materials position-absolute">
+                <a href=""> خرسانة جاهزة</a>
+                <a href="">أسمنت معبأ</a>
+                <a href="">أسمنت سايب</a>
+                <a href="">حديد تسليح</a>
+                <a href="">طوب أسمنتي مصمت</a>
+                <a href="">بلوك أسمنتي مفرغ</a>
+                <a href="">بلاط موزايكو</a>
+                <a href="">بلاط انترلوك</a>
+                <a href="">ألياف حديدية للخرسانة</a>
+                <a href="">رمل</a>
+                <a href="">مواد كهربائية</a>
+                <a href="">مواد سباكة</a>
+                <a href="">عمالة</a>
+                <a href="">جبس أبيض</a>
+                <a href="">زلط</a>
+                <a href="">كرانيش</a>
+                <a href="">أخري</a>
+              </div>
+            </div>
+          </div>
+          <div class="quantity">
+            <label class="d-block" for="quantity">الكمية
+              <span class="text-danger">*</span>
+            </label>
+            <input type="number" id="quantity" name="quantity" min="20" step="0.5" required placeholder="ادخل الكمية">
+          </div>
+          <div class="units">
+            <label class="d-block" for="unit">الوحدة
+              <span class="text-danger">*</span>
+            </label>
+            <select name="unit" id="unit" disabled required>
+              <option value="unit1">م3</option>
+              <option value="unit2">طن</option>
+              <option value="unit3">طوبة</option>
+              <option value="unit4">م2</option>
+            </select>
+          </div>
+
+          <div class="details">
+            <label class="d-block" for="details">تفاصيل أخرى خاصة بالطلب</label>
+            <textarea name="details" id="details" cols="23" rows="5"
+              placeholder="تفاصيل أخرى مثل المواصفات والمقاسات والاعتمادات المطلوبة"></textarea>
+          </div>
+
+          <div class="options d-flex flex-column">
+            <div class="rates">
+              <label class="d-block" for="rate">رتبة الأسمنت
+                <span class="text-danger">*</span>
+              </label>
+              <select class="col-10 droid-arabic" name="rate" id="rate" required>
+                <option value="rate1">42.5</option>
+                <option value="rate2">52.5</option>
+                <option value="rate3">32.5</option>
+              </select>
+            </div>
+
+            <div class="types">
+              <label class="d-block" for="type">نوع الأسمنت
+                <span class="text-danger">*</span>
+              </label>
+              <select class="col-10" name="type" id="type" required>
+                <option value="type1">عادي</option>
+                <option value="type2">مقاوم</option>
+              </select>
+            </div>
+
+            <div class="factory">
+              <label class="d-block" for="name"> المصنع</label>
+              <input class="col-10" type="text">
+            </div>
+          </div>
+        </div>
+        <div class="btns d-flex flex-row justify-content-between mt-3">
+          <button class="btn prev disabled">السابق</button>
+          <button class="btn next">التالي</button>
+        </div>
       </form>
     </div>
   </main>
+
+  <footer class="mt-4">
+
+  </footer>
+
+
+
+
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <!-- JS Linking -->
+  <script src="script.js"></script>
 </body>
 
 </html>

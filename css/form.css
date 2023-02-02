@@ -1,16 +1,85 @@
+/* main {
+  background-color: #fff;
+  padding: 50px 20px;
+} */
+input,
+.options select {
+  background: white;
+}
+input,
+.units select {
+  width: 300px;
+}
+input,
+select {
+  border: 1px solid #ddd;
+  border-radius: 0.4rem;
+  text-align: start;
+  min-height: 35px;
+  font-size: 16px;
+  /* margin-bottom: 15px; */
+}
+input[placeholder],
+textarea[placeholder] {
+  padding-right: 8px;
+  padding-left: 10px;
+}
+select {
+  padding-left: 10px;
+}
+input:focus-visible {
+  outline: 0;
+}
+label {
+  color: #868ba1;
+  font-size: 0.875rem;
+  margin-top: 15px;
+}
 main form {
-  text-align: center;
+  /* text-align: center; */
   /* transform: translate(-50%, -50%); */
-  color: white;
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  color: white !important;
+  border-radius: 10px;
   margin-top: 150px;
   margin-right: auto;
   margin-left: auto;
-  width: 50%;
+  width: 75%;
+  background-color: #fff;
+  padding: 50px 20px;
 }
-form nav .disabled {
+form .header {
+  color: #868ba1;
+  text-align: center;
+  padding: 20px 0;
+}
+form .header .click {
+  background-color: transparent;
+  color: #935cae;
+  border: 1px solid #935cae;
+  border-radius: 10px;
+  padding: 14px 23px;
+  transition: 0.5s ease;
+}
+form .header .click:hover {
+  background-color: #935cae;
+  color: #fff;
+}
+form .header span {
+  font-size: large;
+}
+form .header h2 {
+  margin-top: 10px;
+  font-size: 2.1875rem;
+}
+form nav .pagination .page-item {
+  margin-left: 15px;
+}
+form nav .pagination .page-link {
+  font-size: 14px;
+  padding: 1em 1em;
+  border-radius: 0.5rem;
+}
+main form nav .pagination > .page-item.disabled .page-link {
   background-color: #935cae !important;
   color: white;
 }
@@ -19,5 +88,60 @@ form nav li a .numb {
   height: 50px;
   border-radius: 50%;
   background-color: transparent;
-  border: 1px solid #fff;
+  border: 1px solid #adb5bd;
+  padding: 0.4px 10px;
+  margin-left: 5px;
+}
+form .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  text-align: start;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  border-radius: 1rem;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  background-color: #e9ecef;
+}
+.content .p-name .search-material {
+  min-height: 45px;
+}
+.content .p-name .materials {
+  min-height: 200px;
+  overflow-y: scroll;
+  background-color: #ffffff;
+  width: 100%;
+  display: none;
+}
+.content .p-name a {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #868ba1;
+  padding: 8px;
+  text-align: right;
+}
+.content .p-name a:hover {
+  background-color: #935cae;
+  text-decoration: none;
+  color: #fff;
+}
+.content .details textarea {
+  border-radius: 5px;
+  border: 1px;
+}
+.content .options select {
+  color: #495057;
+  font-size: 1rem;
+}
+form .btns .btn {
+  padding: 10px 19px;
+  font-size: 14px;
+}
+form .btns .next {
+  background-color: #935cae;
+  color: #fff;
 }
