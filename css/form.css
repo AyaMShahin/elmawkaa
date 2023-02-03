@@ -3,11 +3,15 @@
   padding: 50px 20px;
 } */
 input,
-.options select {
+.options select,
+.location select,
+.levels select {
   background: white;
 }
 input,
-.units select {
+.units select,
+.location select,
+.levels select {
   width: 300px;
 }
 input,
@@ -40,7 +44,10 @@ label {
   margin-top: 10px;
   color: red;
 }
-
+.page-link.active1 {
+  background-color: #935cae !important;
+  color: white;
+}
 /* Main section */
 main form {
   /* text-align: center; */
@@ -85,10 +92,6 @@ form nav .pagination .page-link {
   font-size: 14px;
   padding: 1em 1em;
   border-radius: 0.5rem;
-}
-main form nav .pagination > .page-item.disabled .page-link {
-  background-color: #935cae !important;
-  color: white;
 }
 form nav li a .numb {
   width: 50px;
@@ -149,7 +152,10 @@ form .btns .btn {
   padding: 10px 19px;
   font-size: 14px;
 }
-form .btns .next {
+form .btns .next,
+.f2 .prev {
   background-color: #935cae;
   color: #fff;
 }
+
+/* Form 2 styling */

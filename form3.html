@@ -90,7 +90,7 @@
   <!-- End header -->
   <main class="droid-arabic">
     <div class="container">
-      <form name="RegForm" onsubmit="return validation()" action="form2.html" method="get">
+      <form name="RegForm" onsubmit="return InfoValidation()" action="index.html" method="get">
         <div class="header d-flex flex-column justify-content-center align-items-center">
           <a class="click btn d-block mb-5" href="https://elmawkaa.com/HowToContractor" target="_blank">اضغط هنا لتعرف
             كيف تعمل
@@ -101,115 +101,61 @@
         <nav aria-label="...">
           <ul class="pagination pagination-lg" id="pagination">
             <li class="page-item">
-              <a class="page-link active1" href="#" tabindex="-1">
+              <a class="page-link active1 " href="#" tabindex="-1">
                 <span class="numb">1</span>
                 <span>معلومات المنتج</span>
               </a>
             </li>
-            <li class="page-item"><a class="page-link disabled" href="#">
+            <li class="page-item"><a class="page-link active1" href="#">
                 <span class="numb">2</span>
                 <span>المشروع</span>
               </a></li>
-            <li class="page-item"><a class="page-link disabled" href="#">
+            <li class="page-item "><a class="page-link active1" href="#">
                 <span class="numb">3</span>
                 <span>ازاى نوصلك</span>
               </a></li>
           </ul>
         </nav>
         <div class="content">
-          <div class="p-name">
-            <div class="dropdown">
-
-              <label class="d-block" for="name">اسم المنتج المطلوب
-                <span class="text-danger">*</span>
-              </label>
-              <input type="text" class="search-material position-relative" id="name" name="material"
-                placeholder="اختر اسم المنتج المطلوب">
-              <div class="materials position-absolute">
-                <a href=""> خرسانة جاهزة</a>
-                <a href="">أسمنت معبأ</a>
-                <a href="">أسمنت سايب</a>
-                <a href="">حديد تسليح</a>
-                <a href="">طوب أسمنتي مصمت</a>
-                <a href="">بلوك أسمنتي مفرغ</a>
-                <a href="">بلاط موزايكو</a>
-                <a href="">بلاط انترلوك</a>
-                <a href="">ألياف حديدية للخرسانة</a>
-                <a href="">رمل</a>
-                <a href="">مواد كهربائية</a>
-                <a href="">مواد سباكة</a>
-                <a href="">عمالة</a>
-                <a href="">جبس أبيض</a>
-                <a href="">زلط</a>
-                <a href="">كرانيش</a>
-                <a href="">أخري</a>
-              </div>
-            </div>
-            <div id="nError" class="error"></div>
-
-          </div>
-          <div class="quantity">
-            <label class="d-block" for="quantity">الكمية
+          <div class="ncompany">
+            <label class="d-block" for="company">اسم شركتك ايه؟
               <span class="text-danger">*</span>
             </label>
-            <input type="number" id="quantity" name="Quantity" min="20" step="0.5" placeholder="ادخل الكمية">
-            <div id="qError" class="error"></div>
+            <input type="text" id="company" name="company" placeholder=" اسم شركتك ايه؟ ">
+            <div id="cError" class="error"></div>
           </div>
-          <div class="units">
-            <label class="d-block" for="unit">الوحدة
+
+          <div class="fill-name">
+            <label class="d-block" for="fill">اسم الشخص المفوض ثنائي
               <span class="text-danger">*</span>
             </label>
-            <select name="unit" id="unit" disabled>
-              <option value="unit1">م3</option>
-              <option value="unit2">طن</option>
-              <option value="unit3">طوبة</option>
-              <option value="unit4">م2</option>
-            </select>
-
-            <div id="uError" class="error"></div>
+            <input type="text" id="fill" name="fill" placeholder="اسم الشخص المفوض ثنائي">
+            <div id="fillError" class="error"></div>
           </div>
 
-          <div class="details">
-            <label class="d-block" for="details">تفاصيل أخرى خاصة بالطلب</label>
-            <textarea name="details" id="details" cols="23" rows="5"
-              placeholder="تفاصيل أخرى مثل المواصفات والمقاسات والاعتمادات المطلوبة"></textarea>
+
+          <div class="phones">
+            <label class="d-block" for="phone">رقم الموبايل المسجل عالواتساب
+              <span class="text-danger">*</span>
+            </label>
+            <input type="tel" id="phone" name="phone" placeholder="0105511668">
+            <div id="phError" class="error"></div>
           </div>
-
-          <div class="options d-flex flex-column">
-            <div class="rates">
-              <label class="d-block" for="rate">رتبة الأسمنت
-                <span class="text-danger">*</span>
-              </label>
-              <select class="col-10 droid-arabic" name="rate" id="rate">
-                <option value="rate1">42.5</option>
-                <option value="rate2">52.5</option>
-                <option value="rate3">32.5</option>
-              </select>
-              <div id="rError" class="error"></div>
-            </div>
-
-            <div class="types">
-              <label class="d-block" for="type">نوع الأسمنت
-                <span class="text-danger">*</span>
-              </label>
-              <select class="col-10" name="type" id="type">
-                <option value="type1">عادي</option>
-                <option value="type2">مقاوم</option>
-              </select>
-              <div id="tError" class="error"></div>
-            </div>
-
-            <div class="factory">
-              <label class="d-block" for="name"> المصنع</label>
-              <input class="col-10" type="text">
-            </div>
+          <div class="emails">
+            <label class="d-block" for="email">رقم الموبايل المسجل عالواتساب
+              <span class="text-danger">*</span>
+            </label>
+            <input type="email" id="email" name="email" placeholder="ahmed@gmail.com">
+            <div id="eError" class="error"></div>
           </div>
         </div>
-        <div class="btns d-flex flex-row justify-content-between mt-3">
-          <button class="btn prev disabled">السابق</button>
-          <button class="btn next" onclick="paginationButton(currentPage)" id="next" type="submit">التالي</button>
+
+        <div class="btns d-flex flex-row justify-content-between mt-3 f2">
+          <a href="form2.html" class="btn prev">السابق</a>
+          <button class="btn next" id="next" type="submit">التالي</button>
         </div>
       </form>
+    </div>
     </div>
   </main>
 
