@@ -153,7 +153,7 @@ function InfoValidation() {
     return false;
   } else if (companyName !== "") {
     errorCompany.innerHTML = "";
-    company.style.border = "1px solid #28A745";
+    // company.style.border = "1px solid #28A745";
   }
   if (username == "") {
     errorUsername.innerHTML = "هذه الخانة مطلوبة";
@@ -161,7 +161,7 @@ function InfoValidation() {
     return false;
   } else if (username !== "") {
     errorUsername.innerHTML = "";
-    username.style.border = "1px solid #28A745;";
+    // username.style.border = "1px solid #28A745;";
   }
 
   if (phoneNum == "") {
