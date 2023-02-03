@@ -30,7 +30,7 @@ body {
 }
 .overlay {
   width: 100%;
-  height: 75vh;
+  height: 78vh;
   background-color: rgb(0, 0, 0, 0.4); /* alpha= 0.7 the same as opacity */
   position: absolute;
   top: 0;
@@ -144,7 +144,7 @@ nav form .flag {
 /* End Nav */
 /* Header content section */
 .header-content {
-  height: 75vh;
+  height: 78vh;
   background-image: url(../images/home-bg.jpg);
   background-size: cover;
   background-position: 8% 0%;
@@ -211,7 +211,7 @@ nav form .flag {
 }
 .header-content .content .measurement {
   margin-top: 20px;
-  /* margin-bottom: 40px; */
+  padding-bottom: 40px;
 }
 .header-content .content .measurement button {
   background-color: #935cae;
@@ -345,4 +345,74 @@ nav form .flag {
   padding: 3px 2px;
   margin-top: 8px;
   display: inline-block;
+}
+/* order end */
+
+/* Join section */
+.join {
+  background-color: #5a3c91;
+  padding: 50px 0;
+}
+.join .p1 {
+  color: #fff;
+  font-weight: unset !important;
+  font-size: 1.5rem;
+}
+.join h2 {
+  font-size: 48px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #ff9b17 !important;
+}
+.join .p2 {
+  line-height: 1.5;
+  font-size: 20px;
+  color: #fff;
+}
+.join a {
+  background-color: transparent;
+  border: 1px solid #868ba1;
+  border-radius: 8px;
+  color: #fff;
+  padding: 10px 8px;
+}
+.join a:hover {
+  text-decoration: none;
+}
+/* End join */
+/* Footer */
+footer {
+  padding: 30px 0;
+  background-color: #313238;
+}
+footer .right .book {
+  color: #ff9b17 !important;
+  font-weight: bold;
+  font-size: 24px;
+  margin-left: 10px;
+}
+footer .right .book:hover {
+  text-decoration: none;
+}
+footer .right span {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 18px;
+}
+footer .right .icons {
+  color: #fff;
+  font-size: 18px;
+  margin-left: 30px;
+  transition: 0.7s ease-in-out;
+}
+footer .right .icons:first-child {
+  margin-right: 10px;
+}
+footer .right .icons:hover {
+  color: #5a3c91;
+}
+footer .left p {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 100;
 }
